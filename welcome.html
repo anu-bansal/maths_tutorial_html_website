@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Welcome Page</title>
+<style> 
+body{bckground-color:blue;} 
+h1{
+   color:red;
+   text-transform:uppercase;
+   text-decoration:underline;
+   font-size: 50px;
+   font:italic bold;}
+a:link{color:green;}
+a:visited{color:blue;}                 <!--not working if select course option is there-->
+a:active{font-weight:bold;}
+a:hover{letter-spacing:5px;}
+a{font-size: 30px;}
+#pop{
+     background:white;
+     color:green;
+     padding:10px;
+     height:250px;
+     width:300px;
+     border:5px solid yellow;}
+.put{float:right;}
+#move{font-weight: bold;
+      font-size: 25px;
+      color: red; } 
+</style>
+</head>
+
+<body background="maths10.jpg">
+<h1><marquee behaviour="alternate"> Welcome to A Square</marquee></h1>
+<!--<form>
+Select Course<select required>
+             <option disabled>Java</option>
+             <option>Mathematics</option>
+             <option disabled>English</option>
+             <option disabled>Hindi</option>
+             <option disabled>Punjabi</option>
+             <option disabled>Html</option>
+             <option disabled>Physics</option>
+             <option disabled>Chemistry</option>
+             <option disabled>Biology</option></form>-->
+<table align="center">
+<tr> 
+<td><p id="move">Write something about you:</p></td>     <!--not able to use inline css here-->
+</tr>
+<tr>
+<td><p contenteditable="true" id="pop" name="about" align="center"></p>
+</td></tr>
+</table>
+<br><br><br><br>
+<a href="calculator.html" class="put" target="_blank">Calculator</a>
+<a href="course_index.html" target="_blank">Continue</a>                              <!--not working if select course option is there-->
+</body>
+</html>

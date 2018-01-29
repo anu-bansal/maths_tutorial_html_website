@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Form Filling</title>
+<style>  
+h1{
+   color:blue;
+   text-align:centre;}
+p{
+   height:"300px";
+   width:"300px";
+   background:"yellow";
+   color:"red"}
+#pop{
+     position:relative;
+     left:150px;}
+body{background:yellow;
+     background-repeat: no-repeat;
+     background-size: 950px 600px;
+     background-position: center;
+     background-image: url(maths4.jpg);}
+img{float:right;}
+input[type=email], input[type=password],input[type=tel],input[type=date],input[type=text]{
+                                    padding: 5px;
+                                    background:white;
+                                    color: red;}
+</style>
+</head>
+
+<body>
+<h1>Fill the form</h1>
+<form action="Welcome.html" method="post" target="_blank">
+
+Enter Name<br><input type="text" placeholder="Enter your name here" required/><br><br>
+
+Gender<br><input type="radio" name="gender" checked="oncheck"/>Male
+       <input type="radio" name="gender"/>Female
+       <input type="radio" name="gender"/>Others<br><br>
+
+Enter Phone Number<br><input type="tel" required/><br><br>
+
+Enter your DOB<br><input type="date" required><br><br>
+
+Enter your Email<br><input type="email" required/><br><br>
+
+Enter password<br><input type="password" placeholder="Enter password for sign-in in future" required><br><br>
+
+Hobbies<br>
+       <input type="checkbox" name="hobby" id="pop">Dancing<br>
+       <input type="checkbox" name="hobby" id="pop">Singing<br>
+       <input type="checkbox" name="hobby" id="pop">Playing<br>
+       <input type="checkbox" name="hobby" id="pop">Reading Novels<br>
+       <input type="checkbox" name="hobby" id="pop">Sketching<br>
+       <input type="checkbox" name="hobby" id="pop">Painting<br>
+           <br><br>
+ 
+<input type="submit" value="Register"/>
+<input type="reset" value="Reset"/>
+
+</form>
+</body>
+</html>
